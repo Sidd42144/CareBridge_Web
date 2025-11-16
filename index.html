@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CareBridge Global - Medical tourism platform connecting international patients with India's top hospitals">
+    <meta name="keywords" content="medical tourism, india, affordable surgery, heart surgery, IVF, cancer treatment">
+    <meta property="og:title" content="CareBridge Global - Medical Tourism in India">
+    <meta property="og:description" content="Trusted medical tourism facilitator with end-to-end care coordination">
+
+    <title data-i18n="meta.title">CareBridge Global - Medical Tourism in India</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <span aria-hidden="true">🏥</span>
+                    <span data-i18n="brand.name">CareBridge</span>
+                </div>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+                    <a href="#treatments" class="nav-link" data-i18n="nav.treatments">Treatments</a>
+                    <a href="#hospitals" class="nav-link" data-i18n="nav.hospitals">Hospitals</a>
+                    <a href="#translators" class="nav-link" data-i18n="nav.translators">Translators</a>
+                    <a href="#partners" class="nav-link" data-i18n="nav.partners">Partners</a>
+                    <a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a>
+                    <a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                </div>
+
+                <div class="nav-right">
+                    <div class="language-switcher" id="languageSwitcher">
+                        <button class="lang-btn" aria-haspopup="true">🇬🇧 EN</button>
+                        <div class="lang-dropdown" role="menu">
+                            <button data-lang="en" role="menuitem">🇬🇧 English</button>
+                            <button data-lang="ar" role="menuitem">🇸🇦 العربية</button>
+                            <button data-lang="bn" role="menuitem">🇧🇩 বাংলা</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="getQuoteNavBtn" data-i18n="buttons.getQuote">Get
+                        Quote</button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-i18n="hero.title">Your Trusted Partner for Medical Treatment in India</h1>
+                    <div class="value-props">
+                        <p data-i18n="hero.prop1">✓ World-class hospitals & expert doctors</p>
+                        <p data-i18n="hero.prop2">✓ Professional translators & visa assistance</p>
+                        <p data-i18n="hero.prop3">✓ End-to-end care coordination & support</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="getQuoteBtn" data-i18n="buttons.getFreeQuote">Get
+                            Free Quote</button>
+                        <a href="https://wa.me/919876543210?text=Hello%20CareBridge%20Global%2C%20I'm%20interested%20in%20medical%20treatment%20in%20India."
+                            target="_blank" class="btn btn-secondary" data-i18n="buttons.whatsapp">💬 Chat on
+                            WhatsApp</a>
+                    </div>
+                    <div class="trust-signals-hero">
+                        <span><span aria-hidden="true">🏥</span> <span data-i18n="trust.patients">10,000+ patients
+                                treated</span></span>
+                        <span><span aria-hidden="true">⭐</span> <span data-i18n="trust.rating">4.8/5.0 average
+                                rating</span></span>
+                        <span><span aria-hidden="true">🏆</span> <span data-i18n="trust.jci">JCI Accredited</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals -->
+        <section id="trust-signals" class="trust-signals">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="trust.title">Why Trust CareBridge Global?</h2>
+                    <p data-i18n="trust.subtitle">Partnered with India's leading hospitals</p>
+                </div>
+
+                <div class="hospitals-grid" id="hospitalsGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+
+                <div class="statistics">
+                    <div class="stat">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label" data-i18n="stats.patients">Patients Treated</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4.8/5</div>
+                        <div class="stat-label" data-i18n="stats.rating">Average Rating</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label" data-i18n="stats.specialties">Medical Specialties</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label" data-i18n="stats.countries">Countries Served</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="how.title">How It Works</h2>
+                    <p data-i18n="how.subtitle">Simple 3-step process to your treatment</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon" aria-hidden="true">📋</div>
+                        <div class="step-number">1</div>
+                        <h3 data-i18n="how.step1.title">Submit Your Details</h3>
+                        <p data-i18n="how.step1.desc">Fill out a simple form with your medical information and treatment
+                            needs.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon" aria-hidden="true">🏥</div>
+                        <div class="step-number">2</div>
+                        <h3 data-i18n="how.step2.title">Get Matched & Quoted</h3>
+                        <p data-i18n="how.step2.desc">Our team matches you with the best hospital and provides a
+                            detailed quote.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon" aria-hidden="true">✈️</div>
+                        <div class="step-number">3</div>
+                        <h3 data-i18n="how.step3.title">Travel & Receive Care</h3>
+                        <p data-i18n="how.step3.desc">We handle visa, travel, accommodation, and provide full care
+                            coordination.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="testimonials.title">Patient Testimonials</h2>
+                    <p data-i18n="testimonials.subtitle">Hear from our satisfied patients</p>
+                </div>
+
+                <div class="testimonials-grid" id="testimonialsGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments -->
+        <section id="treatments" class="treatments">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="treatments.title">Medical Treatments</h2>
+                    <p data-i18n="treatments.subtitle">Explore world-class treatments available in India</p>
+                </div>
+
+                <div class="treatments-grid" id="treatmentsGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Hospitals -->
+        <section id="hospitals" class="hospitals">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="hospitals.title">Partner Hospitals</h2>
+                    <p data-i18n="hospitals.subtitle">India's leading JCI-accredited hospitals</p>
+                </div>
+
+                <div class="hospitals-grid" id="hospitalsGrid2">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Translators -->
+        <section id="translators" class="translators">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="translators.title">Professional Translators</h2>
+                    <p data-i18n="translators.subtitle">Expert medical translators to support you throughout your
+                        journey</p>
+                </div>
+
+                <div class="translators-grid" id="translatorsGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="dashboard">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="dashboard.title">Your Patient Journey</h2>
+                    <p data-i18n="dashboard.subtitle">Preview of your personalized care timeline</p>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="patient-info">
+                        <h3 data-i18n="dashboard.welcome">Welcome, Ahmed Al-Rashid</h3>
+                        <p data-i18n="dashboard.patientId">Patient ID: PAT-2024-67890</p>
+                    </div>
+
+                    <div class="timeline" id="timeline">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="dashboard-note">
+                    <p><strong data-i18n="dashboard.noteLabel">Note:</strong> <span data-i18n="dashboard.noteText">This is a
+                            preview of the patient dashboard. Full access and functionality will be available after booking
+                            confirmation.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="faq.title">Frequently Asked Questions</h2>
+                    <p data-i18n="faq.subtitle">Find answers to common questions about our services</p>
+                </div>
+
+                <div class="faq-container" id="faqContainer">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="blog.title">Medical Tourism Blog</h2>
+                    <p data-i18n="blog.subtitle">Expert insights and patient guides</p>
+                </div>
+
+                <div class="blog-grid" id="blogGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section id="partners" class="partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="partners.title">Our Partners</h2>
+                    <p data-i18n="partners.subtitle">Trusted by leading hospitals and organizations</p>
+                </div>
+
+                <div class="partners-category">
+                    <h3 data-i18n="partners.hospitalPartners">Hospital Partners</h3>
+                    <div class="partners-grid">
+                        <div class="partner-logo" data-i18n="partners.logo.apollo">Apollo</div>
+                        <div class="partner-logo" data-i18n="partners.logo.fortis">Fortis</div>
+                        <div class="partner-logo" data-i18n="partners.logo.max">Max</div>
+                        <div class="partner-logo" data-i18n="partners.logo.aravind">Aravind</div>
+                    </div>
+                </div>
+
+                <div class="partners-category">
+                    <h3 data-i18n="partners.insurancePartners">Insurance Partners</h3>
+                    <div class="partners-grid">
+                        <div class="partner-logo">AXA</div>
+                        <div class="partner-logo">Allianz</div>
+                        <div class="partner-logo">Bupa</div>
+                        <div class="partner-logo">GeniusPlus</div>
+                    </div>
+                </div>
+
+                <div class="partners-category">
+                    <h3 data-i18n="partners.travelPartners">Travel Partners</h3>
+                    <div class="partners-grid">
+                        <div class="partner-logo">Emirates</div>
+                        <div class="partner-logo">IndiGo</div>
+                        <div class="partner-logo">BookMyStay</div>
+                        <div class="partner-logo">Uber</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="contact.title">Contact Us</h2>
+                    <p data-i18n="contact.subtitle">Get in touch with our team</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <h4 data-i18n="contact.emailLabel">📧 Email</h4>
+                            <p>info@carebridgeglobal.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h4 data-i18n="contact.phoneLabel">📱 Phone</h4>
+                            <p>+91-9876-543-210</p>
+                        </div>
+                        <div class="info-item">
+                            <h4 data-i18n="contact.whatsappLabel">💬 WhatsApp</h4>
+                            <p>+91-9876-543-210</p>
+                        </div>
+                        <div class="info-item">
+                            <h4 data-i18n="contact.addressLabel">📍 Address</h4>
+                            <p data-i18n="contact.address">CareBridge Global<br>New Delhi, India</p>
+                        </div>
+                        <div class="info-item">
+                            <h4 data-i18n="contact.hoursLabel">🕐 Office Hours</h4>
+                            <p data-i18n="contact.hours">Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label data-i18n="form.fullName.label">Full Name</label>
+                            <input type="text" required name="fullName" placeholder="Your name" data-i18n-placeholder="form.fullName.placeholder">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form.email.label">Email</label>
+                            <input type="email" required name="email" placeholder="your@email.com" data-i18n-placeholder="form.email.placeholder">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form.phone.label">Phone</label>
+                            <input type="tel" required name="phone" placeholder="+971 50 123 4567" data-i18n-placeholder="form.phone.placeholder">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form.message.label">Message</label>
+                            <textarea required name="message" placeholder="Your message..." rows="5" data-i18n-placeholder="form.message.placeholder"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full" data-i18n="form.submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span aria-hidden="true">🏥</span>
+                        <span data-i18n="brand.fullName">CareBridge Global</span>
+                    </div>
+                    <p data-i18n="footer.description">Trusted medical tourism facilitator connecting international patients with India's top hospitals.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#treatments" data-i18n="nav.treatments">Treatments</a></li>
+                        <li><a href="#hospitals" data-i18n="nav.hospitals">Hospitals</a></li>
+                        <li><a href="#translators" data-i18n="nav.translators">Translators</a></li>
+                        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="footer.resources">Resources</h4>
+                    <ul>
+                        <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contactUs">Contact Us</h4>
+                    <ul>
+                        <li>📧 info@carebridgeglobal.com</li>
+                        <li>📱 +91-9876-543-210</li>
+                        <li>💬 WhatsApp: +91-9876-543-210</li>
+                        <li>📍 New Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 CareBridge Global. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal" id="quoteModal" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="quote.title">Get Your Free Medical Quote</h2>
+                <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+            </div>
+
+            <div class="form-steps">
+                <div class="steps-indicator">
+                    <div class="step-indicator active" data-step="1">1</div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="2">2</div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="3">3</div>
+                </div>
+                <p class="step-label"><span data-i18n="quote.stepLabel">Step</span> <span id="currentStep">1</span> <span data-i18n="quote.of">of</span> 3</p>
+            </div>
+
+            <form id="quoteForm" class="quote-form">
+                <!-- Step 1: Basic Info -->
+                <div class="form-step active" data-step="1">
+                    <h3 data-i18n="quote.step1.title">Basic Information</h3>
+                    <div class="form-group">
+                        <label data-i18n="form.fullName.label">Full Name *</label>
+                        <input type="text" name="fullName" required placeholder="Enter your full name" data-i18n-placeholder="form.fullName.placeholder">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form.country.label">Country *</label>
+                        <select name="country" required>
+                            <option value="" data-i18n="form.country.select">Select your country</option>
+                            <option value="UAE">🇦🇪 United Arab Emirates</option>
+                            <option value="Saudi Arabia">🇸🇦 Saudi Arabia</option>
+                            <option value="Kuwait">🇰🇼 Kuwait</option>
+                            <option value="Qatar">🇶🇦 Qatar</option>
+                            <option value="Bangladesh">🇧🇩 Bangladesh</option>
+                            <option value="Nigeria">🇳🇬 Nigeria</option>
+                            <option value="Kenya">🇰🇪 Kenya</option>
+                            <option value="Egypt">🇪🇬 Egypt</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form.phone.label">Phone/WhatsApp *</label>
+                        <input type="tel" name="phone" required placeholder="+971 50 123 4567" data-i18n-placeholder="form.phone.placeholder">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form.email.label">Email *</label>
+                        <input type="email" name="email" required placeholder="your.email@example.com" data-i18n-placeholder="form.email.placeholder">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <!-- Step 2: Treatment -->
+                <div class="form-step" data-step="2">
+                    <h3 data-i18n="quote.step2.title">Treatment Details</h3>
+                    <div class="form-group">
+                        <label data-i18n="form.treatment.label">Treatment Type *</label>
+                        <select name="treatmentType" required>
+                            <option value="" data-i18n="form.treatment.select">Select treatment type</option>
+                            <option value="Heart Surgery">❤️ Heart Surgery</option>
+                            <option value="Cancer Treatment">🎗️ Cancer Treatment</option>
+                            <option value="Orthopedic">🦴 Orthopedic Surgery</option>
+                            <option value="IVF">👶 IVF & Fertility</option>
+                            <option value="Liver Transplant">🫀 Liver Transplant</option>
+                            <option value="Kidney Transplant">Kidney Transplant</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form.upload.label">Upload Medical Report (Optional)</label>
+                        <div class="file-upload">
+                            <input type="file" name="medicalReport" accept=".pdf,.jpg,.jpeg,.png">
+                            <p data-i18n="form.upload.instructions">📄 Click to upload or drag and drop</p>
+                            <small data-i18n="form.upload.note">PDF, JPG, PNG (Max 10MB)</small>
+                            <span class="file-name"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form.description.label">Brief Description</label>
+                        <textarea name="description" placeholder="Tell us about your medical condition..." rows="4" data-i18n-placeholder="form.description.placeholder"></textarea>
+                    </div>
+                </div>
+
+                <!-- Step 3: Preferences -->
+                <div class="form-step" data-step="3">
+                    <h3 data-i18n="quote.step3.title">Preferences</h3>
+                    <div class="form-group">
+                        <label data-i18n="form.preferredLanguage.label">Preferred Language</label>
+                        <div class="language-options">
+                            <button type="button" class="lang-option active" data-lang="English" data-i18n="lang.english">🇬🇧 English</button>
+                            <button type="button" class="lang-option" data-lang="Arabic" data-i18n="lang.arabic">🇸🇦 Arabic</button>
+                            <button type="button" class="lang-option" data-lang="Bangla" data-i18n="lang.bengali">🇧🇩 Bangla</button>
+                        </div>
+                        <input type="hidden" name="preferredLanguage" value="English">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form.contactMethod.label">Preferred Contact Method</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="contactMethod" value="WhatsApp" checked>
+                                <span data-i18n="contactMethods.whatsapp">WhatsApp</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="contactMethod" value="Email">
+                                <span data-i18n="contactMethods.email">Email</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="contactMethod" value="SMS">
+                                <span data-i18n="contactMethods.sms">SMS</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Screen -->
+                <div class="form-step" data-step="4" id="successScreen">
+                    <div class="success-message">
+                        <div class="success-icon" aria-hidden="true">✅</div>
+                        <h3 data-i18n="quote.success.title">Request Received!</h3>
+                        <p data-i18n="quote.success.desc">Your quote request has been submitted successfully.</p>
+
+                        <div class="ticket-box">
+                            <p data-i18n="quote.ticketLabel">Your Ticket ID</p>
+                            <p class="ticket-id" id="ticketId">CBG-2025-12345</p>
+                        </div>
+
+                        <p data-i18n="quote.success.followUp">Our team will contact you within 24 hours via your preferred contact method.</p>
+
+                        <div class="success-buttons">
+                            <button type="button" class="btn btn-secondary" id="closeSuccessBtn" data-i18n="buttons.close">Close</button>
+                            <a href="https://wa.me/919876543210?text=Hello%20CareBridge%20Global" target="_blank"
+                                class="btn btn-primary" data-i18n="buttons.whatsappNow">💬 Chat on WhatsApp Now</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="form-navigation">
+                <button type="button" class="btn btn-ghost" id="prevBtn" style="display:none;" data-i18n="buttons.back">← Back</button>
+                <button type="button" class="btn btn-primary" id="nextBtn" data-i18n="buttons.next">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20CareBridge%20Global%2C%20I'm%20interested%20in%20treatment%20at%20Apollo%20Hospitals."
+        target="_blank" class="whatsapp-button" title="Chat on WhatsApp">
+
+        <img src="src/images/whatsapp.png" alt="WhatsApp" style="width:32px; height:32px;">
+    </a>
+
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

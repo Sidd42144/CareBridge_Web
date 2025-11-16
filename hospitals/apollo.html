@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo Hospitals - CareBridge Global</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="../index.html" class="logo">
+                    <span>🏥</span>
+                    <span>CareBridge</span>
+                </a>
+                <div class="nav-menu">
+                    <a href="../index.html#hospitals" class="nav-link">Back to Hospitals</a>
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="btn btn-primary"
+                    onclick="document.getElementById('quoteModal').classList.add('active')">Get Quote</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="detail-hero">
+            <div class="container">
+                <h1>🏥 Apollo Hospitals</h1>
+                <p>India's Leading Multi-Speciality Hospital Chain</p>
+                <div style="margin-top: 20px;">
+                    <button class="btn btn-primary btn-lg"
+                        onclick="document.getElementById('quoteModal').classList.add('active')">Book
+                        Consultation</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <div class="container">
+                <h2>About Apollo Hospitals</h2>
+                <p>Apollo Hospitals is India's largest healthcare network with state-of-the-art facilities and
+                    world-class medical professionals. Established in 1983, Apollo has been a pioneer in bringing
+                    healthcare innovations to India and is recognized globally for its excellence.</p>
+
+                <div class="hospital-info-grid">
+                    <div class="info-card">
+                        <h3>🏢 Locations</h3>
+                        <p>70+ hospitals across India including Delhi, Mumbai, Chennai, Bangalore, Hyderabad</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>👨‍⚕️ Doctors</h3>
+                        <p>5000+ highly qualified doctors trained internationally with extensive experience</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🛏️ Beds</h3>
+                        <p>10,000+ beds across all Apollo Hospitals</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🏆 Accreditations</h3>
+                        <p>JCI Accredited, ISO 9001 Certified, NABH Certified</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section bg-gray">
+            <div class="container">
+                <h2>Specializations</h2>
+                <div class="specialties-grid">
+                    <div class="specialty-card">Cardiology</div>
+                    <div class="specialty-card">Oncology</div>
+                    <div class="specialty-card">Neurology</div>
+                    <div class="specialty-card">Orthopedics</div>
+                    <div class="specialty-card">Gastroenterology</div>
+                    <div class="specialty-card">Urology</div>
+                    <div class="specialty-card">Nephrology</div>
+                    <div class="specialty-card">Pulmonology</div>
+                    <div class="specialty-card">Rheumatology</div>
+                    <div class="specialty-card">Pediatrics</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <div class="container">
+                <h2>Technology & Facilities</h2>
+                <ul style="list-style: none;">
+                    <li style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">✓ Latest diagnostic imaging (MRI, CT,
+                        PET)</li>
+                    <li style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">✓ Robotic-assisted surgery systems
+                    </li>
+                    <li style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">✓ Advanced ICU and NICU facilities
+                    </li>
+                    <li style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">✓ Organ transplant programs</li>
+                    <li style="padding: 12px 0; border-bottom: 1px solid #e5e7eb;">✓ Telemedicine and remote
+                        consultation</li>
+                    <li style="padding: 12px 0;">✓ International patient coordination department</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="detail-section cta-section">
+            <div class="container">
+                <h2>Ready to Choose Apollo?</h2>
+                <button class="btn btn-primary btn-lg"
+                    onclick="document.getElementById('quoteModal').classList.add('active')">Get Free Quote from
+                    Apollo</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>CareBridge Global</h4>
+                    <p>Trusted medical tourism facilitator connecting international patients with India's top hospitals.
+                    </p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="../index.html#treatments">Treatments</a></li>
+                        <li><a href="../index.html#hospitals">Hospitals</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>📧 info@carebridgeglobal.com<br>📱 +91-9876-543-210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CareBridge Global. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <button class="modal-close"
+                onclick="document.getElementById('quoteModal').classList.remove('active')">&times;</button>
+            <h2>Get Free Quote</h2>
+            <p>Please contact us to get a detailed quote from Apollo Hospitals.</p>
+            <form style="margin-top: 20px;">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-full" style="width: 100%; margin-top: 20px;">Get
+                    Quote</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20CareBridge%20Global%2C%20I'm%20interested%20in%20treatment%20at%20Apollo%20Hospitals."
+        target="_blank" class="whatsapp-button" title="Chat on WhatsApp">
+
+        <img src="../src/images/whatsapp.png" alt="WhatsApp" style="width:32px; height:32px;">
+    </a>
+
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/* RTL (Right-to-Left) Support */
+
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .navbar-content {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-menu {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-right {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .logo {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .language-dropdown {
+    left: 0;
+    right: auto;
+}
+
+[dir="rtl"] .hero-content {
+    text-align: center;
+}
+
+[dir="rtl"] .value-props p {
+    text-align: right;
+}
+
+[dir="rtl"] .form-navigation {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .faq-question {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] svg {
+    transform: scaleX(-1);
+}
+
+[dir="rtl"] .whatsapp-button {
+    left: 24px;
+    right: auto;
+}
+
+[dir="rtl"] .contact-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .footer-content {
+    direction: rtl;
+}

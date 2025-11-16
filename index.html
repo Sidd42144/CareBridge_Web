@@ -53,7 +53,73 @@
                         Quote</button>
                 </div>
 
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu">☰</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+                <!-- Mobile Menu Drawer -->
+                <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+                    <!-- Menu Header -->
+                    <div class="mobile-menu-header">
+                        <h3 data-i18n="menu.title">Menu</h3>
+                        <!-- <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button> -->
+                    </div>
+
+                    <!-- Menu Content -->
+                    <div class="mobile-menu-content">
+                        <!-- Navigation Items -->
+                        <div class="mobile-menu-section">
+                            <a href="#home" class="mobile-menu-item active" data-i18n="nav.home">🏠 Home</a>
+                            <a href="#treatments" class="mobile-menu-item" data-i18n="nav.treatments">💊 Treatments</a>
+                            <a href="#hospitals" class="mobile-menu-item" data-i18n="nav.hospitals">🏥 Hospitals</a>
+                            <a href="#translators" class="mobile-menu-item" data-i18n="nav.translators">🗣️
+                                Translators</a>
+                            <a href="#partners" class="mobile-menu-item" data-i18n="nav.partners">🤝 Partners</a>
+                            <a href="#faq" class="mobile-menu-item" data-i18n="nav.faq">❓ FAQ</a>
+                            <a href="#blog" class="mobile-menu-item" data-i18n="nav.blog">📰 Blog</a>
+                            <a href="#contact" class="mobile-menu-item" data-i18n="nav.contact">📞 Contact</a>
+                        </div>
+
+                        <!-- Language Switcher -->
+                        <div class="mobile-lang-switcher">
+                            <span class="mobile-lang-label" data-i18n="language.select">Language</span>
+                            <div class="mobile-lang-options" id="mobileLangOptions">
+                                <button class="mobile-lang-btn active" data-lang="en">EN</button>
+                                <button class="mobile-lang-btn" data-lang="ar">AR</button>
+                                <button class="mobile-lang-btn" data-lang="bn">BN</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="mobile-menu-actions">
+                        <button class="mobile-menu-btn-primary" id="mobileGetQuoteBtn" data-i18n="buttons.getQuote">Get
+                            Quote</button>
+                    </div>
+
+                    <!-- Contact Info Footer -->
+                    <div class="mobile-contact-info">
+                        <div class="mobile-contact-item">
+                            <span class="mobile-contact-icon">📞</span>
+                            <a href="tel:+919876543210"
+                                style="color: inherit; text-decoration: none;">+91-9876-543-210</a>
+                        </div>
+                        <div class="mobile-contact-item">
+                            <span class="mobile-contact-icon">✉️</span>
+                            <a href="mailto:info@carebridgeglobal.com"
+                                style="color: inherit; text-decoration: none;">info@carebridgeglobal.com</a>
+                        </div>
+                        <div class="mobile-contact-item">
+                            <span class="mobile-contact-icon">📍</span>
+                            <span>New Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </nav>
@@ -82,7 +148,8 @@
                                 treated</span></span>
                         <span><span aria-hidden="true">⭐</span> <span data-i18n="trust.rating">4.8/5.0 average
                                 rating</span></span>
-                        <span><span aria-hidden="true">🏆</span> <span data-i18n="trust.jci">JCI Accredited</span></span>
+                        <span><span aria-hidden="true">🏆</span> <span data-i18n="trust.jci">JCI
+                                Accredited</span></span>
                     </div>
                 </div>
             </div>
@@ -232,8 +299,10 @@
                 </div>
 
                 <div class="dashboard-note">
-                    <p><strong data-i18n="dashboard.noteLabel">Note:</strong> <span data-i18n="dashboard.noteText">This is a
-                            preview of the patient dashboard. Full access and functionality will be available after booking
+                    <p><strong data-i18n="dashboard.noteLabel">Note:</strong> <span data-i18n="dashboard.noteText">This
+                            is a
+                            preview of the patient dashboard. Full access and functionality will be available after
+                            booking
                             confirmation.</span></p>
                 </div>
             </div>
@@ -342,21 +411,26 @@
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label data-i18n="form.fullName.label">Full Name</label>
-                            <input type="text" required name="fullName" placeholder="Your name" data-i18n-placeholder="form.fullName.placeholder">
+                            <input type="text" required name="fullName" placeholder="Your name"
+                                data-i18n-placeholder="form.fullName.placeholder">
                         </div>
                         <div class="form-group">
                             <label data-i18n="form.email.label">Email</label>
-                            <input type="email" required name="email" placeholder="your@email.com" data-i18n-placeholder="form.email.placeholder">
+                            <input type="email" required name="email" placeholder="your@email.com"
+                                data-i18n-placeholder="form.email.placeholder">
                         </div>
                         <div class="form-group">
                             <label data-i18n="form.phone.label">Phone</label>
-                            <input type="tel" required name="phone" placeholder="+971 50 123 4567" data-i18n-placeholder="form.phone.placeholder">
+                            <input type="tel" required name="phone" placeholder="+971 50 123 4567"
+                                data-i18n-placeholder="form.phone.placeholder">
                         </div>
                         <div class="form-group">
                             <label data-i18n="form.message.label">Message</label>
-                            <textarea required name="message" placeholder="Your message..." rows="5" data-i18n-placeholder="form.message.placeholder"></textarea>
+                            <textarea required name="message" placeholder="Your message..." rows="5"
+                                data-i18n-placeholder="form.message.placeholder"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-full" data-i18n="form.submit">Send Message</button>
+                        <button type="submit" class="btn btn-primary w-full" data-i18n="form.submit">Send
+                            Message</button>
                     </form>
                 </div>
             </div>
@@ -372,7 +446,8 @@
                         <span aria-hidden="true">🏥</span>
                         <span data-i18n="brand.fullName">CareBridge Global</span>
                     </div>
-                    <p data-i18n="footer.description">Trusted medical tourism facilitator connecting international patients with India's top hospitals.</p>
+                    <p data-i18n="footer.description">Trusted medical tourism facilitator connecting international
+                        patients with India's top hospitals.</p>
                 </div>
 
                 <div class="footer-section">
@@ -428,7 +503,8 @@
                     <div class="step-line"></div>
                     <div class="step-indicator" data-step="3">3</div>
                 </div>
-                <p class="step-label"><span data-i18n="quote.stepLabel">Step</span> <span id="currentStep">1</span> <span data-i18n="quote.of">of</span> 3</p>
+                <p class="step-label"><span data-i18n="quote.stepLabel">Step</span> <span id="currentStep">1</span>
+                    <span data-i18n="quote.of">of</span> 3</p>
             </div>
 
             <form id="quoteForm" class="quote-form">
@@ -437,7 +513,8 @@
                     <h3 data-i18n="quote.step1.title">Basic Information</h3>
                     <div class="form-group">
                         <label data-i18n="form.fullName.label">Full Name *</label>
-                        <input type="text" name="fullName" required placeholder="Enter your full name" data-i18n-placeholder="form.fullName.placeholder">
+                        <input type="text" name="fullName" required placeholder="Enter your full name"
+                            data-i18n-placeholder="form.fullName.placeholder">
                         <span class="error-message"></span>
                     </div>
                     <div class="form-group">
@@ -457,12 +534,14 @@
                     </div>
                     <div class="form-group">
                         <label data-i18n="form.phone.label">Phone/WhatsApp *</label>
-                        <input type="tel" name="phone" required placeholder="+971 50 123 4567" data-i18n-placeholder="form.phone.placeholder">
+                        <input type="tel" name="phone" required placeholder="+971 50 123 4567"
+                            data-i18n-placeholder="form.phone.placeholder">
                         <span class="error-message"></span>
                     </div>
                     <div class="form-group">
                         <label data-i18n="form.email.label">Email *</label>
-                        <input type="email" name="email" required placeholder="your.email@example.com" data-i18n-placeholder="form.email.placeholder">
+                        <input type="email" name="email" required placeholder="your.email@example.com"
+                            data-i18n-placeholder="form.email.placeholder">
                         <span class="error-message"></span>
                     </div>
                 </div>
@@ -494,7 +573,8 @@
                     </div>
                     <div class="form-group">
                         <label data-i18n="form.description.label">Brief Description</label>
-                        <textarea name="description" placeholder="Tell us about your medical condition..." rows="4" data-i18n-placeholder="form.description.placeholder"></textarea>
+                        <textarea name="description" placeholder="Tell us about your medical condition..." rows="4"
+                            data-i18n-placeholder="form.description.placeholder"></textarea>
                     </div>
                 </div>
 
@@ -504,9 +584,12 @@
                     <div class="form-group">
                         <label data-i18n="form.preferredLanguage.label">Preferred Language</label>
                         <div class="language-options">
-                            <button type="button" class="lang-option active" data-lang="English" data-i18n="lang.english">🇬🇧 English</button>
-                            <button type="button" class="lang-option" data-lang="Arabic" data-i18n="lang.arabic">🇸🇦 Arabic</button>
-                            <button type="button" class="lang-option" data-lang="Bangla" data-i18n="lang.bengali">🇧🇩 Bangla</button>
+                            <button type="button" class="lang-option active" data-lang="English"
+                                data-i18n="lang.english">🇬🇧 English</button>
+                            <button type="button" class="lang-option" data-lang="Arabic" data-i18n="lang.arabic">🇸🇦
+                                Arabic</button>
+                            <button type="button" class="lang-option" data-lang="Bangla" data-i18n="lang.bengali">🇧🇩
+                                Bangla</button>
                         </div>
                         <input type="hidden" name="preferredLanguage" value="English">
                     </div>
@@ -541,10 +624,12 @@
                             <p class="ticket-id" id="ticketId">CBG-2025-12345</p>
                         </div>
 
-                        <p data-i18n="quote.success.followUp">Our team will contact you within 24 hours via your preferred contact method.</p>
+                        <p data-i18n="quote.success.followUp">Our team will contact you within 24 hours via your
+                            preferred contact method.</p>
 
                         <div class="success-buttons">
-                            <button type="button" class="btn btn-secondary" id="closeSuccessBtn" data-i18n="buttons.close">Close</button>
+                            <button type="button" class="btn btn-secondary" id="closeSuccessBtn"
+                                data-i18n="buttons.close">Close</button>
                             <a href="https://wa.me/919876543210?text=Hello%20CareBridge%20Global" target="_blank"
                                 class="btn btn-primary" data-i18n="buttons.whatsappNow">💬 Chat on WhatsApp Now</a>
                         </div>
@@ -553,7 +638,8 @@
             </form>
 
             <div class="form-navigation">
-                <button type="button" class="btn btn-ghost" id="prevBtn" style="display:none;" data-i18n="buttons.back">← Back</button>
+                <button type="button" class="btn btn-ghost" id="prevBtn" style="display:none;"
+                    data-i18n="buttons.back">← Back</button>
                 <button type="button" class="btn btn-primary" id="nextBtn" data-i18n="buttons.next">Next →</button>
             </div>
         </div>
@@ -573,6 +659,129 @@
     <script src="js/api.js"></script>
     <script src="js/components.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        // Mobile Menu Management
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenuDrawer = document.getElementById('mobileMenuDrawer');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            const mobileMenuClose = document.getElementById('mobileMenuClose');
+            const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+            const mobileGetQuoteBtn = document.getElementById('mobileGetQuoteBtn');
+            const mobileLangOptions = document.querySelectorAll('#mobileLangOptions .mobile-lang-btn');
+
+            // Toggle mobile menu
+            mobileMenuBtn?.addEventListener('click', function (e) {
+                e.stopPropagation();
+                mobileMenuDrawer?.classList.toggle('active');
+                mobileMenuOverlay?.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
+                document.body.style.overflow = mobileMenuDrawer?.classList.contains('active') ? 'hidden' : 'auto';
+            });
+
+            // Close mobile menu
+            const closeMenu = () => {
+                mobileMenuDrawer?.classList.remove('active');
+                mobileMenuOverlay?.classList.remove('active');
+                mobileMenuBtn?.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            };
+
+            mobileMenuClose?.addEventListener('click', closeMenu);
+            mobileMenuOverlay?.addEventListener('click', closeMenu);
+
+            // Close menu on link click
+            mobileMenuItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+
+                    // Update active state
+                    mobileMenuItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+
+                    closeMenu();
+
+                    // Small delay to let menu close smoothly before navigating
+                    setTimeout(() => {
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }, 300);
+                });
+            });
+
+            // Mobile language switcher
+            mobileLangOptions.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const lang = this.getAttribute('data-lang');
+                    console.log("Mobile language pressed:", lang);
+
+                    mobileLangOptions.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    if (typeof loadLanguage === 'function') {
+                        console.log("Calling loadLanguage");
+                        loadLanguage(lang);
+                    } else {
+                        console.log("loadLanguage NOT found");
+                    }
+                });
+            });
+
+
+            // Mobile get quote button
+            mobileGetQuoteBtn?.addEventListener('click', function () {
+                closeMenu();
+                setTimeout(() => {
+                    const quoteModal = document.getElementById('quoteModal');
+                    if (quoteModal) {
+                        quoteModal.classList.add('active');
+                    }
+                }, 300);
+            });
+
+            // Update active menu item on scroll (if page has smooth scroll sections)
+            const updateActiveMenuItem = () => {
+                let current = 'home';
+                const sections = ['home', 'treatments', 'hospitals', 'translators', 'partners', 'faq', 'blog', 'contact'];
+
+                sections.forEach(section => {
+                    const element = document.getElementById(section);
+                    if (element && window.scrollY >= element.offsetTop - 100) {
+                        current = section;
+                    }
+                });
+
+                mobileMenuItems.forEach(item => {
+                    const href = item.getAttribute('href');
+                    if (href === '#' + current) {
+                        item.classList.add('active');
+                    } else {
+                        item.classList.remove('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', updateActiveMenuItem, { passive: true });
+
+            // Close menu on Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && mobileMenuDrawer?.classList.contains('active')) {
+                    closeMenu();
+                }
+            });
+
+            // Prevent body scroll when menu is open
+            mobileMenuOverlay?.addEventListener('touchmove', function (e) {
+                if (mobileMenuDrawer?.classList.contains('active')) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+        });
+    </script>
 </body>
 
 </html>
